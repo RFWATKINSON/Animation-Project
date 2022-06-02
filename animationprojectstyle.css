@@ -1,0 +1,52 @@
+*{
+    margin: 0%;
+     padding: 0;
+     box-sizing:border-box
+}
+
+body{
+height: 100vh;
+padding:15px;
+color:#fff;
+background-image: url(/pexels-steve-johnson-845242.jpg);
+background-size: cover;
+
+	}
+   
+.ball
+	{	
+		position:absolute;
+		bottom: 30px;
+		background: url(/clipart3645196.png); 
+		width :340px;
+		height: 379px;	
+		animation: walking_animation 1s steps(5) infinite, move_forward 4s linear infinite;
+		
+	}
+
+
+	@keyframes walking_animation
+
+	{
+		0%{background-position: 0px;}
+		100%{background-position: 100%;}
+
+
+	}
+
+	@keyframes move_forward
+	{
+		0%{transform:translateX(-500px);}
+		100%{transform:translateX(1366px);}
+	
+		}
+	
+
+
+
+
+
+
+
+
+	
